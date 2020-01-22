@@ -20,3 +20,4 @@ call s:SetOptDefault('filename_style', 'pathshorten')
 call s:SetOptDefault('divider_style', 'fancy')
 
 set tabline=%!tabber#TabLine()
+call tabber#TabLine()
