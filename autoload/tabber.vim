@@ -101,7 +101,8 @@ function! tabber#TabLine() "{{{2
     let tabline .= tab_highlight
     let tabline .= s:mouse_handle_for_tab(tab)
     let tabline .= s:highlighted_text('TabLineTabNumber', ' ' . tab, is_active_tab) . tab_highlight
-    let tabline .= s:window_count_for_tab(tab, is_active_tab) . tab_highlight
+    " 1:2 code  => 1 code
+    "let tabline .= s:window_count_for_tab(tab, is_active_tab) . tab_highlight
 
     if s:tab_contains_modified_buffers(tab)
       let tabline .= ' ' . s:highlighted_text('TabLineModifiedFlag', '+', is_active_tab) . tab_highlight
